@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>how many?</title><link rel="stylesheet" href="popup.css"></head>
+<body><header><span class="eyebrow">YOUR YOUTUBE MOMENT</span><h1>how many?</h1><p>스크롤 사이, 나를 위한 시간.</p></header>
+<main><section class="hero"><div class="hero-top"><span>오늘 누적</span><i aria-hidden="true">⌛</i></div><div id="total">00:00:00</div><p id="remaining">불러오는 중…</p><div class="meter" aria-hidden="true"><i id="meter-fill"></i></div></section>
+<div class="rows"><div><span class="dot shorts"></span>YouTube 쇼츠 <strong id="shorts">00:00:00 · 0개</strong></div><div><span class="dot video"></span>YouTube 롱폼 <strong id="video">00:00:00 · 0개</strong></div><div><span class="dot reels"></span>Instagram <strong id="instagram">릴스 00:00:00 · 피드 00:00:00</strong></div><div><span class="dot tiktok"></span>TikTok <strong id="tiktok">00:00:00 · 0개</strong></div><div><span class="dot everytime"></span>에브리타임 <strong id="everytime">00:00:00</strong></div></div>
+<label class="toggle">시청 시간 자동 측정 <input id="enabled" type="checkbox"></label>
+<label class="goal">6시간 목표 <select id="goal"><option value="15">15분</option><option value="20">20분</option><option value="30">30분</option><option value="45">45분</option><option value="60">60분</option></select></label>
+<section class="shop"><div class="shop-head"><span>테마 상점</span><b><i id="points">0</i> P</b></div><p>포인트로 구매한 테마는 바로 적용됩니다.</p><div class="theme-list"><button data-theme="hourglass"><strong>모래시계</strong><small>기본 제공</small></button><button data-theme="volcano"><strong>화산</strong><small>30 P</small></button><button data-theme="cat"><strong>고양이</strong><small>50 P</small></button></div></section>
+<section class="challenge"><div class="challenge-head"><div><span>현재 6시간 챌린지</span><strong id="challenge-title">시작 전</strong></div></div><p id="challenge-status">블록을 시작하면 목표를 지킬 때 포인트를 받아요.</p><button id="start-challenge">이번 블록 챌린지 시작</button><div class="reward"><span>성공 보상 · 콤보</span><strong>20 P + 보너스</strong></div></section>
+<p class="note">활성 탭의 실제 영상 재생과 피드 체류 시간을 기록합니다. 광고·일시정지·다른 탭은 제외돼요.</p>
+<p id="error" role="status"></p></main><script src="rules.js"></script><script src="popup.js"></script></body></html>

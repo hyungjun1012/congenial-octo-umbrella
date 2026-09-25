@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "how many? — Safari 스크롤 시간",
+  "version": "0.4.0",
+  "description": "YouTube, Instagram, TikTok, 에브리타임의 실제 영상 재생 및 피드 체류 시간을 기록합니다.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://m.youtube.com/*",
+    "https://youtube.com/*",
+    "https://www.instagram.com/*",
+    "https://instagram.com/*",
+    "https://www.tiktok.com/*",
+    "https://tiktok.com/*",
+    "https://everytime.kr/*",
+    "https://www.everytime.kr/*"
+  ],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_popup": "popup.html", "default_title": "how many? 오늘의 스크롤 시간"},
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*", "https://m.youtube.com/*", "https://youtube.com/*", "https://www.instagram.com/*", "https://instagram.com/*", "https://www.tiktok.com/*", "https://tiktok.com/*", "https://everytime.kr/*", "https://www.everytime.kr/*"],
+    "js": ["rules.js", "content.js"],
+    "run_at": "document_idle"
+  }]
+}
