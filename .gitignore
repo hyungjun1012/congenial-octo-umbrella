@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+dist/
+build/
+.svelte-kit/
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+work/
+outputs/*.zip
+outputs/*.apk
+outputs/how-many-android/.gradle/
+outputs/how-many-android/.idea/
+outputs/how-many-android/build/
+outputs/how-many-android/local.properties
